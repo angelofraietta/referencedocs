@@ -1,0 +1,573 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% https://bibdesk.sourceforge.io/
+
+%% Created for Angelo Fraietta at 2018-05-28 07:47:09 +1000 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+@book{brindle1986musical,
+	title={Musical composition},
+	author={Brindle, Reginald Smith},
+	year={1986},
+	publisher={Oxford University Press}
+}
+
+@article{cameron1954sociological,
+	title={Sociological notes on the jam session},
+	author={Cameron, William Bruce},
+	journal={Social forces},
+	pages={177--182},
+	year={1954},
+	publisher={JSTOR}
+}
+
+@inproceedings{YuxiLiu2012KTaA,
+	abstract = {Internet of Things (IoT) has been paid more and more attention by the government, academe and industry all over the world because of its great prospect. This article introduced the concept of IoT, the basic properties and characteristics. Then it discussed the key technologies of IoT in detail taking the wire-less sensor network as an example, and the application of IoT was illustrated by its typical use in environment monitoring.},
+	journal = {Intelligent Computation Technology and Automation (ICICTA), 2012 Fifth International Conference on},
+	pages = {197--200},
+	publisher = {IEEE},
+	isbn = {978-1-4673-0470-2},
+	year = {2012},
+	title = {Key Technologies and Applications of Internet of Things},
+	language = {eng},
+	author = {Yuxi Liu and Guohui Zhou},
+	keywords = {Computing and Processing},
+	month = {January},
+}
+
+@inproceedings{zhu2010iot,
+	title={Iot gateway: Bridgingwireless sensor networks into internet of things},
+	author={Zhu, Qian and Wang, Ruicong and Chen, Qi and Liu, Yan and Qin, Weijun},
+	booktitle={Embedded and Ubiquitous Computing (EUC), 2010 IEEE/IFIP 8th International Conference on},
+	pages={347--352},
+	year={2010},
+	organization={Ieee}
+}
+
+@inproceedings{winkler-1995,
+	Author = {Winkler, Todd},
+	Date-Added = {2018-05-27 20:48:01 +0000},
+	Date-Modified = {2018-05-27 20:51:20 +0000},
+	Organization = {The International Computer Music Association},
+	Pages = {261-64},
+	Publisher = {The International Computer Music Association},
+	Title = {Making motion musical: Gesture mapping strategies for interactive computer music},
+	Year = {1995}}
+
+@webpage{RaspberryPi3-B,
+	Date-Added = {2018-05-16 12:17:52 +0000},
+	Date-Modified = {2018-05-16 12:18:40 +0000},
+	Keywords = {RASPBERRY PI 3 MODEL B},
+	Lastchecked = {16 May 2018},
+	Url = {https://www.raspberrypi.org/products/raspberry-pi-3-model-b/},
+	Year = {2018},
+	Bdsk-Url-1 = {https://www.raspberrypi.org/products/raspberry-pi-3-model-b/}}
+
+@webpage{RaspberryPiZero,
+	Date-Added = {2018-05-16 12:03:25 +0000},
+	Date-Modified = {2018-05-16 12:09:42 +0000},
+	Keywords = {RASPBERRY PI ZERO},
+	Lastchecked = {16 May 2018},
+	Url = {https://www.raspberrypi.org/products/raspberry-pi-zero/},
+	Year = {2017},
+	Bdsk-Url-1 = {https://www.raspberrypi.org/products/raspberry-pi-zero/}}
+
+@article{Figueredo:2009dg,
+	Author = {Figueredo, A.~J. and Wolf, P. S.~A.},
+	Journal = {Human Nature},
+	Pages = {317-330},
+	Title = {Assortative pairing and life history strategy - a cross-cultural study.},
+	Volume = {20},
+	Year = {2009}}
+
+@article{10016781751,
+	Author = {Azura, L.},
+	Journal = {Master's Thesis, Institute of Computer Science, University of Stuttgart},
+	Title = {Design of an audio player as system-on-a-chip},
+	Url = {https://ci.nii.ac.jp/naid/10016781751/en/},
+	Year = {2001},
+	Bdsk-Url-1 = {https://ci.nii.ac.jp/naid/10016781751/en/}}
+
+@article{Deering:1990:MRD:78952.78953,
+	Acmid = {78953},
+	Address = {New York, NY, USA},
+	Author = {Deering, Stephen E. and Cheriton, David R.},
+	Doi = {10.1145/78952.78953},
+	Issn = {0734-2071},
+	Issue_Date = {May 1990},
+	Journal = {ACM Trans. Comput. Syst.},
+	Month = may,
+	Number = {2},
+	Numpages = {26},
+	Pages = {85--110},
+	Publisher = {ACM},
+	Title = {Multicast Routing in Datagram Internetworks and Extended LANs},
+	Url = {http://doi.acm.org/10.1145/78952.78953},
+	note = {Accessed: 2018-07-05},
+	Volume = {8},
+	Year = {1990},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/78952.78953},
+	Bdsk-Url-2 = {https://doi.org/10.1145/78952.78953}}
+
+@inproceedings{hindle-hacking02013,
+	Author = {A.Hindle},
+	Booktitle = {International Conference on New Interfaces for Musical Expression (Fr-2016)},
+	Date-Added = {2018-05-15 04:35:54 +0000},
+	Date-Modified = {2018-05-15 04:40:36 +0000},
+	Organization = {Griffith University, Brisbane},
+	Title = {Hacking NIMEs},
+	Year = {2013}}
+
+@inproceedings{Lee2014ModelsAO,
+	Author = {Sang Won Lee and Georg Essl},
+	Title = {Models and Opportunities for Networked Live Coding},
+	Year = {2014}}
+
+@inproceedings{bukvic2014pd,
+	Author = {Bukvic, Ivica Ico},
+	Booktitle = {NIME},
+	Pages = {163--166},
+	Title = {Pd-L2Ork Raspberry Pi Toolkit as a Comprehensive Arduino Alternative in K-12 and Production Scenarios.},
+	Year = {2014}}
+
+@book{lindholm2014java,
+	Author = {Lindholm, Tim and Yellin, Frank and Bracha, Gilad and Buckley, Alex},
+	Publisher = {Pearson Education},
+	Title = {The Java virtual machine specification},
+	Year = {2014}}
+
+
+@book{idris2014python,
+	Author = {Idris, Ivan},
+	Publisher = {Packt Publishing Ltd},
+	Title = {Python data analysis},
+	Year = {2014}}
+
+@book{dean2009oxford,
+	Author = {Dean, Roger T},
+	Publisher = {OUP USA},
+	Title = {The Oxford handbook of computer music},
+	Year = {2009}}
+
+@inproceedings{fraietta2005smart,
+	Author = {Fraietta, Angelo},
+	Booktitle = {Proceedings of the 2005 conference on New interfaces for musical expression},
+	Organization = {University of British Columbia, Vancouver},
+	Pages = {46--49},
+	Title = {The smart controller workbench},
+	Year = {2005}}
+
+@inproceedings{tabanao2011predicting,
+	Author = {Tabanao, Emily S and Rodrigo, Ma Mercedes T and Jadud, Matthew C},
+	Booktitle = {Proceedings of the seventh international workshop on Computing education research},
+	Organization = {ACM},
+	Pages = {85--92},
+	Title = {Predicting at-risk novice Java programmers through the analysis of online protocols},
+	Year = {2011}}
+
+@misc{TufteEdwardR.2001Tvdo,
+	Address = {Cheshire, Conn.},
+	Author = {Tufte, Edward R.},
+	Edition = {2nd ed.},
+	Isbn = {0961392142},
+	Keywords = {Statistics -- Graphic methods},
+	Language = {eng},
+	Lccn = {2001271866},
+	Publisher = {Graphics Press},
+	Title = {The visual display of quantitative information},
+	Year = {2001}}
+
+@phdthesis{fraietta-smartcontroller,
+	Author = {Angelo Fraietta},
+	Date-Added = {2018-05-15 05:04:17 +0000},
+	Date-Modified = {2018-05-15 05:07:08 +0000},
+	School = {Western Sydney University},
+	Title = {The Smart Controller -- an integrated electronic instrument for real-time performance using programmable logic control},
+	Type = {PhD},
+	Year = {2006}}
+
+@inproceedings{mclean2009words,
+	Author = {McLean, Alex and Wiggins, Geraint A},
+	Booktitle = {NIME},
+	Organization = {Citeseer},
+	Pages = {276--279},
+	Title = {Words, Movement and Timbre.},
+	Year = {2009}}
+
+@book{keogh2002j2ee,
+	Author = {Keogh, James and Keogh, Jim},
+	Publisher = {McGraw-Hill/Osborne},
+	Title = {J2EE: The complete reference},
+	Year = {2002}}
+
+@article{magnusson2011algorithms,
+	Author = {Magnusson, Thor},
+	Journal = {Leonardo Music Journal},
+	Pages = {19--23},
+	Publisher = {MIT Press},
+	Title = {Algorithms as scores: Coding live music},
+	Year = {2011}}
+
+@article{bergstrom2015code,
+	Author = {Bergstrom, Ilias and Lotto, R Beau},
+	Journal = {Leonardo},
+	Number = {1},
+	Pages = {25--31},
+	Publisher = {MIT Press},
+	Title = {Code Bending: A new creative coding practice},
+	Volume = {48},
+	Year = {2015}}
+
+@article{magnusson2014scoring,
+	Author = {Magnusson, Thor},
+	Journal = {Organised Sound},
+	Number = {3},
+	Pages = {268--275},
+	Publisher = {Cambridge University Press},
+	Title = {Scoring with Code: Composing with algorithmic notation},
+	Volume = {19},
+	Year = {2014}}
+
+@article{milne2002difficulties,
+	Author = {Milne, Iain and Rowe, Glenn},
+	Journal = {Education and Information technologies},
+	Number = {1},
+	Pages = {55--66},
+	Publisher = {Springer},
+	Title = {Difficulties in learning and teaching programming---views of students and tutors},
+	Volume = {7},
+	Year = {2002}}
+
+@inproceedings{dyke2011aspects,
+	Author = {Dyke, Gregory},
+	Booktitle = {Proceedings of the 42nd ACM technical symposium on Computer science education},
+	Organization = {ACM},
+	Pages = {505--510},
+	Title = {Which aspects of novice programmers' usage of an IDE predict learning outcomes},
+	Year = {2011}}
+
+@misc{Binstock-javatools-2010,
+	Author = {A. Binstock},
+	 howpublished = {\url{https://www.infoworld.com/article/2683534/development-environments/infoworld-review--top-java-programming-tools.html}},
+	Institution = {InfoWorld},
+	Keywords = {IntelliJ},
+	Lastchecked = {15 May 2018},
+	Title = {InfoWorld review: Top Java programming tools},
+	Year = {2010},
+	note = {Accessed: 2018-07-05}
+}
+
+@book{horstmann2002core,
+	Author = {Horstmann, Cay S and Cornell, Gary},
+	Publisher = {Pearson Education},
+	Title = {Core Java 2: Volume I, Fundamentals},
+	Year = {2002}}
+
+@inproceedings{ferguson2017creative,
+	Author = {Ferguson, Sam and Bown, Oliver},
+	Booktitle = {Proceedings of the 2017 ACM SIGCHI Conference on Creativity and Cognition},
+	Organization = {ACM},
+	Pages = {551--553},
+	Title = {Creative Coding for the Raspberry Pi using the HappyBrackets Platform},
+	Year = {2017}}
+
+@book{huber2012midi,
+	Author = {Huber, David Miles},
+	Publisher = {Focal Press},
+	Title = {The MIDI manual: a practical guide to MIDI in the project studio},
+	Year = {2012}}
+
+@book{berger2001embedded,
+	Author = {Berger, Arnold S},
+	Publisher = {CRC Press},
+	Title = {Embedded systems design: an introduction to processes, tools, and techniques},
+	Year = {2001}}
+
+@webpage{RaspberryPi3-B,
+	Date-Added = {2018-05-16 12:17:52 +0000},
+	Date-Modified = {2018-05-16 12:18:40 +0000},
+	Keywords = {RASPBERRY PI 3 MODEL B},
+	Lastchecked = {16 May 2018},
+	Url = {https://www.raspberrypi.org/products/raspberry-pi-3-model-b/},
+	Year = {2018},
+	Bdsk-Url-1 = {https://www.raspberrypi.org/products/raspberry-pi-3-model-b/}}
+
+@webpage{RaspberryPiZero,
+	Date-Added = {2018-05-16 12:03:25 +0000},
+	Date-Modified = {2018-05-16 12:09:42 +0000},
+	Keywords = {RASPBERRY PI ZERO},
+	Lastchecked = {16 May 2018},
+	Url = {https://www.raspberrypi.org/products/raspberry-pi-zero/},
+	Year = {2017},
+	Bdsk-Url-1 = {https://www.raspberrypi.org/products/raspberry-pi-zero/}}
+
+@book{quatrani2002visual,
+	Author = {Quatrani, Terry},
+	Publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+	Title = {Visual modeling with rational rose 2002 and UML},
+	Year = {2002}}
+
+@book{winkler2001composing,
+	Author = {Winkler, Todd},
+	Publisher = {MIT press},
+	Title = {Composing interactive music: techniques and ideas using Max},
+	Year = {2001}}
+
+@book{schmidt2014raspberry,
+	Author = {Schmidt, Maik},
+	Publisher = {Pragmatic Bookshelf},
+	Title = {Raspberry Pi: A Quick-Start Guide},
+	Year = {2014}}
+
+@article{moro2016making,
+	Author = {Moro, Giulio and Bin, Astrid and Jack, Robert H and Heinrichs, Christian and son, Andrew P and others},
+	Publisher = {University of Sussex},
+	Title = {Making high-performance embedded instruments with Bela and Pure Data},
+	Year = {2016}}
+
+@inproceedings{mcpherson2015environment,
+	Author = {McPherson, Andrew and Zappi, Victor},
+	Booktitle = {Audio Engineering Society Convention 138},
+	Organization = {Audio Engineering Society},
+	Title = {An environment for submillisecond-latency audio and sensor processing on BeagleBone Black},
+	Year = {2015}}
+
+@article{aaron2016development,
+	Author = {Aaron, Samuel and Blackwell, Alan F and Burnard, Pamela},
+	Journal = {Journal of Music, Technology \& Education},
+	Number = {1},
+	Pages = {75--94},
+	Publisher = {Intellect},
+	Title = {The development of Sonic Pi and its use in educational partnerships: Co-creating pedagogies for learning computer programming},
+	Volume = {9},
+	Year = {2016}}
+
+@inproceedings{aaron2014temporal,
+	Author = {Aaron, Samuel and Orchard, Dominic and Blackwell, Alan F},
+	Booktitle = {Proceedings of the 2nd ACM SIGPLAN international workshop on Functional art, music, modeling \& design},
+	Organization = {ACM},
+	Pages = {37--47},
+	Title = {Temporal semantics for a live coding language},
+	Year = {2014}}
+
+
+@article{shapiro2016blockytalky,
+	Author = {Shapiro, R Benjamin and Kelly, Annie and Ahrens, Matthew and Fiebrink, Rebecca and others},
+	Publisher = {Goldsmiths University of London},
+	Title = {BlockyTalky: A physical and distributed computer music toolkit for kids},
+	Year = {2016}}
+
+@article{kim2016ambient,
+	Author = {Kim, Hee-Won and Lee, Su-Jung and Park, Han-Ju and Lee, Suk-Ho},
+	Journal = {Indian Journal of Science and Technology},
+	Number = {46},
+	Title = {Ambient Lighting for Korean Karaoke based on Screen Colors and Singer Interaction},
+	Volume = {9},
+	Year = {2016}}
+
+@incollection{horvath2015cosplay,
+	Author = {Horvath, Joan and Cameron, Rich},
+	Booktitle = {The New Shop Class},
+	Pages = {85--96},
+	Publisher = {Springer},
+	Title = {Cosplay, Wearable Tech, and the Internet of Things},
+	Year = {2015}}
+
+@book{monk2016raspberry,
+	title={Raspberry Pi cookbook: Software and hardware problems and solutions},
+	author={Monk, Simon},
+	year={2016},
+	publisher={" O'Reilly Media, Inc."}
+}
+@inproceedings{singer2004lemur,
+	title={LEMUR's musical robots},
+	author={Singer, Eric and Feddersen, Jeff and Redmon, Chad and Bowen, Bil},
+	booktitle={Proceedings of the 2004 conference on New interfaces for musical expression},
+	pages={181--184},
+	year={2004},
+	organization={National University of Singapore}
+}
+
+@inproceedings{fraietta2005smartbell,
+	title={Smart Controller/Bell Garden Demo},
+	author={Fraietta, Angelo},
+	booktitle={Proceedings of the 2005 conference on New interfaces for musical expression},
+	pages={260--261},
+	year={2005},
+	organization={National University of Singapore}
+}
+
+@article{bown2018understanding,
+	title={Understanding media multiplicities},
+	author={Bown, Oliver and Ferguson, Sam},
+	journal={Entertainment Computing},
+	volume={25},
+	pages={62--70},
+	year={2018},
+	publisher={Elsevier}
+}
+
+@article{bown2017creative,
+	title={Creative Media+ the Internet of Things= Media Multiplicities},
+	author={Bown, Oliver and Ferguson, Sam},
+	journal={Leonardo},
+	number={Early Access},
+	pages={53--54},
+	year={2017},
+	publisher={MIT Press}
+}
+
+@inproceedings{ferguson2017networked,
+	title={Networked Pixels: Strategies for Building Visual and Auditory Images with Distributed Independent Devices},
+	author={Ferguson, Sam and Rowe, Anthony and Bown, Oliver and Birtles, Liam and Bennewith, Chris},
+	booktitle={Proceedings of the 2017 ACM SIGCHI Conference on Creativity and Cognition},
+	pages={299--308},
+	year={2017},
+	organization={ACM}
+}
+
+@inproceedings{bown2016musical,
+	title={A Musical Game of Bowls Using the DIADs},
+	author={Bown, Oliver and Ferguson, Sam},
+	booktitle={Proceedings of the International Conference on New Interfaces for Musical Expression},
+	pages={371--372},
+	year={2016}
+}
+
+@inproceedings{bown2015distributed,
+	title={Distributed Interactive Audio Devices: Creative strategies and audience responses to novel musical interaction scenarios},
+	author={Bown, Oliver and Loke, Lian and Ferguson, SJ and Reinhardt, Dagmar},
+	booktitle={International Symposium on Electronic Art},
+	year={2015},
+	organization={ISEA}
+}
+
+@article{ledin-embedded,
+	Author = {Ledin, Jim},
+	Date-Added = {2018-05-28 05:39:33 +0000},
+	Date-Modified = {2018-05-28 05:40:51 +0000},
+	Journal = {Embedded Systems Programming},
+	Month = {April},
+	Number = {4},
+	Pages = {19-29},
+	Title = {Simulation takes off with hardware},
+	Volume = {15},
+	Year = {2002}}
+
+@book{margolis2011arduino,
+	title={Arduino Cookbook: Recipes to Begin, Expand, and Enhance Your Projects},
+	author={Margolis, Michael},
+	year={2011},
+	publisher={" O'Reilly Media, Inc."}
+}
+
+@inproceedings{BadamasiYusufAbdullahi2014Twpo,
+	abstract = {In this paper, we analyze the working principle of an arduino. These days many people try to use the arduino because it makes things easier due to the simplified version of C++ and the already made Arduino microcontroller(atmega328 microcontroller [1]) that you can programme, erase and reprogramme at any given time. In this paper we will discuss the hardware components used in the arduino board, the software used to programme it (Arduino board) with the guide on how to write and construct your own projects, and a couple of examples of an arduino project, This will give you the overall view of an arduino uno, that after reading this paper you will get the basic concept and use of an arduino uno.},
+	journal = {Electronics, Computer and Computation (ICECCO), 2014 11th International Conference on},
+	pages = {1--4},
+	publisher = {IEEE},
+	isbn = {978-1-4799-4108-7},
+	year = {2014},
+	title = {The working principle of an Arduino},
+	language = {eng},
+	author = {Badamasi, Yusuf Abdullahi},
+	keywords = {Bioengineering ; Communication, Networking and Broadcast Technologies ; Components, Circuits, Devices and Systems ; Computing and Processing ; Engineering Profession ; Fields, Waves and Electromagnetics ; Photonics and Electrooptics ; Power, Energy and Industry Applications ; Robotics and Control Systems ; Signal Processing and Analysis},
+	month = {September},
+}
+
+@article{mcpherson2016action,
+	title={Action-sound latency: Are our tools fast enough?},
+	author={McPherson, Andrew P and Jack, Robert H and Moro, Giulio and others},
+	year={2016},
+	publisher={Griffith University}
+}
+
+@article{pc2003pc,
+	title={PC/104 Specification Version 2.5},
+	author={PC/104 Embedded Consortium and others},
+	journal={San Francisco: PC/104 Embedded Consortium},
+	year={2003}
+}
+
+@article{morris1996meeting,
+	title={Meeting user needs keeps board business booming},
+	author={Morris, Henry M},
+	journal={Control Engineering},
+	volume={43},
+	number={11},
+	pages={D},
+	year={1996},
+	publisher={CAHNERS-DENVER PUBLISHING CO 8773 S RIDGELINE BLVD, HIGHLANDS RANCH, CO 80126-2329}
+}
+
+@book{BarrettStevenFStevenFrank2016BttB,
+	series = {Synthesis digital library of engineering and computer science},
+	abstract = {BeagleBone Black is a low-cost, open hardware computer uniquely suited to interact with sensors and actuators directly and over the Web. Introduced in April 2013 by BeagleBoard.org, a community of developers first established in early 2008, BeagleBone Black is used frequently to build vision-enabled robots, home automation systems, artistic lighting systems, and countless other do-it-yourself and professional projects. BeagleBone variants include the original BeagleBone and the newer BeagleBone Black, both hosting a powerful 32-bit, super-scalar ARM Cortex A8 processor capable of running numerous mobile and desktop-capable operating systems, typically variants of Linux including Debian, Android, and Ubuntu. Yet, BeagleBone is small enough to fit in a small mint tin box. The "Bone" may be used in a wide variety of projects from middle school science fair projects to senior design projects to first prototypes of very complex systems. Novice users may access the power of the Bone through the user-friendly BoneScript software, experienced through a Web browser in most major operating systems, including Microsoft Windows, Apple Mac OS X, or the Linux operating systems. Seasoned users may take full advantage of the Bone's power using the underlying Linux-based operating system, a host of feature extension boards (Capes) and a wide variety of Linux community open source libraries. This book provides an introduction to this powerful computer and has been designed for a wide variety of users including the first time novice through the seasoned embedded system design professional. The book contains background theory on system operation coupled with many well-documented, illustrative examples. Examples for novice users are centered on motivational, fun robot projects while advanced projects follow the theme of assistive technology and image-processing applications.},
+	isbn = {1627055126},
+	year = {2016},
+	title = {Bad to the Bone : crafting electronic systems with BeagleBone Black},
+	edition = {Second edition.},
+	language = {eng},
+	author = {Barrett, Steven F. (Steven Frank)},
+	keywords = {BeagleBone Black (Computer)},
+}
+
+
+
+
+@book{richardson2012getting,
+	title={Getting started with raspberry PI},
+	author={Richardson, Matt and Wallace, Shawn},
+	year={2012},
+	publisher={" O'Reilly Media, Inc."}
+}
+
+@inproceedings{zhao2017design,
+	title={Design and Implemention of an Emulation Node for Space Network Protocol Testing},
+	author={Zhao, Sichen and Fang, Yuan and Li, Wenfeng and Zhao, Kanglian},
+	booktitle={International Conference on Machine Learning and Intelligent Communications},
+	pages={658--667},
+	year={2017},
+	organization={Springer}
+}
+
+@inproceedings{bown2013java,
+	title={A java-based remote live coding system for controlling multiple raspberry pi units},
+	author={Bown, Oliver and Young, Miriama and Johnson, Samuel},
+	booktitle={ICMC},
+	year={2013}
+}
+@book{dean2018oxford,
+	title={The Oxford Handbook of Algorithmic Music},
+	author={Dean, Roger T and McLean, Alex},
+	year={2018},
+	publisher={Oxford University Press}
+}
+
+@article{murphy2012musical,
+	title={Musical robotics in a loudspeaker world: Developments in alternative approaches to localization and spatialization},
+	author={Murphy, Jim and Kapur, Ajay and Carnegie, Dale},
+	journal={Leonardo Music Journal},
+	pages={41--48},
+	year={2012},
+	publisher={MIT Press}
+}
+
+
+@inproceedings{turchet2017towards,
+	title={Towards the Internet of Musical Things},
+	author={Turchet, Luca and Fischione, Carlo and Barthet, Mathieu},
+	booktitle={Proceedings of the Sound and Music Computing Conference},
+	pages={13--20},
+	year={2017}
+}
+
+@inproceedings{turchet2016smart,
+	title={Smart instruments: Towards an ecosystem of interoperable devices connecting performers and audiences},
+	author={Turchet, Luca and McPherson, Andrew and Fischione, Carlo},
+	booktitle={Proceedings of the Sound and Music Computing Conference},
+	pages={498--505},
+	year={2016}
+}
