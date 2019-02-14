@@ -1,0 +1,14 @@
+@article{10.2307/684637,
+ ISSN = {08848971, 15737861},
+ URL = {http://www.jstor.org/stable/684637},
+ abstract = {When one examines current national anthems and flags, one finds a great deal of variety. What explains this variation? Possible factors include a nation's world-system position and its degree of modernization. Specifically, I analyze the ways in which world-system position and modernization affect the design or configuration--the syntactic structure--of the symbols national leaders adopt to convey their nation's identity. Findings reveal a link between a nation's world-system position and the structure of its symbols. Leaders of core nations adopt more basic anthems and flags than their semiperiphery and periphery counterparts. However, modernization has no such influence.},
+ author = {Karen A. Cerulo},
+ journal = {Sociological Forum},
+ number = {2},
+ pages = {243--271},
+ publisher = {[Wiley, Springer]},
+ title = {Symbols and the World System: National Anthems and Flags},
+ volume = {8},
+ year = {1993}
+}
+

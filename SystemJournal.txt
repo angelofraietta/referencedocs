@@ -1,0 +1,797 @@
+
+pi@hb-b827eb9089ee:~ $ sudo journalctl
+-- Logs begin at Fri 2016-11-04 04:16:42 AEDT, end at Fri 2018-11-16 08:47:03 AEDT. --
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Booting Linux on physical CPU 0x0
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Linux version 4.14.17-v7+ (dc4@dc4-XPS13-9333) (gcc version 4.9
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c5383d
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CPU: div instructions available: patching division code
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruct
+Nov 04 04:16:42 hb-b827eb9089ee kernel: OF: fdt: Machine model: Raspberry Pi 3 Model B Rev 1.2
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Memory policy: Data cache writealloc
+Nov 04 04:16:42 hb-b827eb9089ee kernel: cma: Reserved 256 MiB at 0x1ec00000
+Nov 04 04:16:42 hb-b827eb9089ee kernel: On node 0 totalpages: 229376
+Nov 04 04:16:42 hb-b827eb9089ee kernel: free_area_init_node: node 0, pgdat 80c7e800, node_mem_map b779a
+Nov 04 04:16:42 hb-b827eb9089ee kernel:   Normal zone: 2016 pages used for memmap
+Nov 04 04:16:42 hb-b827eb9089ee kernel:   Normal zone: 0 pages reserved
+Nov 04 04:16:42 hb-b827eb9089ee kernel:   Normal zone: 229376 pages, LIFO batch:31
+Nov 04 04:16:42 hb-b827eb9089ee kernel: random: fast init done
+Nov 04 04:16:42 hb-b827eb9089ee kernel: percpu: Embedded 17 pages/cpu @b7743000 s38720 r8192 d22720 u69
+Nov 04 04:16:42 hb-b827eb9089ee kernel: pcpu-alloc: s38720 r8192 d22720 u69632 alloc=17*4096
+Nov 04 04:16:42 hb-b827eb9089ee kernel: pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Built 1 zonelists, mobility grouping on.  Total pages: 227360
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Kernel command line: 8250.nr_uarts=0 cma=256M bcm2708_fb.fbwidt
+Nov 04 04:16:42 hb-b827eb9089ee kernel: PID hash table entries: 4096 (order: 2, 16384 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Dentry cache hash table entries: 131072 (order: 7, 524288 bytes
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Memory: 633032K/917504K available (7168K kernel code, 548K rwda
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Virtual kernel memory layout:
+                                            vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+                                            fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+                                            vmalloc : 0xb8800000 - 0xff800000   (1136 MB)
+                                            lowmem  : 0x80000000 - 0xb8000000   ( 896 MB)
+                                            modules : 0x7f000000 - 0x80000000   (  16 MB)
+                                              .text : 0x80008000 - 0x80800000   (8160 kB)
+                                              .init : 0x80b00000 - 0x80c00000   (1024 kB)
+                                              .data : 0x80c00000 - 0x80c89244   ( 549 kB)
+                                               .bss : 0x80c90ed4 - 0x80d41734   ( 707 kB)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Nov 04 04:16:42 hb-b827eb9089ee kernel: ftrace: allocating 24624 entries in 73 pages
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Hierarchical RCU implementation.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+Nov 04 04:16:42 hb-b827eb9089ee kernel: arch_timer: cp15 timer(s) running at 19.20MHz (phys).
+Nov 04 04:16:42 hb-b827eb9089ee kernel: clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycle
+Nov 04 04:16:42 hb-b827eb9089ee kernel: sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 439
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Switching to timer-based delay loop, resolution 52ns
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Console: colour dummy device 80x30
+Nov 04 04:16:42 hb-b827eb9089ee kernel: console [tty1] enabled
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Calibrating delay loop (skipped), value calculated using timer 
+Nov 04 04:16:42 hb-b827eb9089ee kernel: pid_max: default: 32768 minimum: 301
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Disabling memory control group subsystem
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CPU: Testing write buffer coherency: ok
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Setting up static identity map for 0x100000 - 0x10003c
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Hierarchical SRCU implementation.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: smp: Bringing up secondary CPUs ...
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+Nov 04 04:16:42 hb-b827eb9089ee kernel: smp: Brought up 1 node, 4 CPUs
+Nov 04 04:16:42 hb-b827eb9089ee kernel: SMP: Total of 4 processors activated (153.60 BogoMIPS).
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CPU: All CPU(s) started in HYP mode.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CPU: Virtualization extensions available.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: devtmpfs: initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: VFP support v0.3: implementor 41 architecture 3 part 40 variant
+Nov 04 04:16:42 hb-b827eb9089ee kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, 
+Nov 04 04:16:42 hb-b827eb9089ee kernel: futex hash table entries: 1024 (order: 4, 65536 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: pinctrl core: initialized pinctrl subsystem
+Nov 04 04:16:42 hb-b827eb9089ee kernel: NET: Registered protocol family 16
+Nov 04 04:16:42 hb-b827eb9089ee kernel: DMA: preallocated 1024 KiB pool for atomic coherent allocations
+Nov 04 04:16:42 hb-b827eb9089ee kernel: hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoin
+Nov 04 04:16:42 hb-b827eb9089ee kernel: hw-breakpoint: maximum watchpoint size is 8 bytes.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Serial: AMBA PL011 UART driver
+Nov 04 04:16:42 hb-b827eb9089ee kernel: bcm2835-mbox 3f00b880.mailbox: mailbox enabled
+Nov 04 04:16:42 hb-b827eb9089ee kernel: uart-pl011 3f201000.serial: could not find pctldev for node /so
+Nov 04 04:16:42 hb-b827eb9089ee kernel: bcm2835-dma 3f007000.dma: DMA legacy API manager at b880d000, d
+Nov 04 04:16:42 hb-b827eb9089ee kernel: SCSI subsystem initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usbcore: registered new interface driver usbfs
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usbcore: registered new interface driver hub
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usbcore: registered new device driver usb
+Nov 04 04:16:42 hb-b827eb9089ee kernel: raspberrypi-firmware soc:firmware: Attached to firmware from 20
+Nov 04 04:16:42 hb-b827eb9089ee kernel: clocksource: Switched to clocksource arch_sys_counter
+Nov 04 04:16:42 hb-b827eb9089ee kernel: VFS: Disk quotas dquot_6.6.0
+Nov 04 04:16:42 hb-b827eb9089ee kernel: VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: FS-Cache: Loaded
+Nov 04 04:16:42 hb-b827eb9089ee kernel: CacheFiles: Loaded
+Nov 04 04:16:42 hb-b827eb9089ee kernel: NET: Registered protocol family 2
+Nov 04 04:16:42 hb-b827eb9089ee kernel: TCP established hash table entries: 8192 (order: 3, 32768 bytes
+Nov 04 04:16:42 hb-b827eb9089ee kernel: TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: TCP: Hash tables configured (established 8192 bind 8192)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: UDP hash table entries: 512 (order: 2, 16384 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: NET: Registered protocol family 1
+Nov 04 04:16:42 hb-b827eb9089ee kernel: RPC: Registered named UNIX socket transport module.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: RPC: Registered udp transport module.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: RPC: Registered tcp transport module.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: hw perfevents: enabled with armv7_cortex_a7 PMU driver, 7 count
+Nov 04 04:16:42 hb-b827eb9089ee kernel: workingset: timestamp_bits=14 max_order=18 bucket_order=4
+Nov 04 04:16:42 hb-b827eb9089ee kernel: FS-Cache: Netfs 'nfs' registered for caching
+Nov 04 04:16:42 hb-b827eb9089ee kernel: NFS: Registering the id_resolver key type
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Key type id_resolver registered
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Key type id_legacy registered
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major
+Nov 04 04:16:42 hb-b827eb9089ee kernel: io scheduler noop registered
+Nov 04 04:16:42 hb-b827eb9089ee kernel: io scheduler deadline registered (default)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: io scheduler cfq registered
+Nov 04 04:16:42 hb-b827eb9089ee kernel: io scheduler mq-deadline registered
+Nov 04 04:16:42 hb-b827eb9089ee kernel: io scheduler kyber registered
+Nov 04 04:16:42 hb-b827eb9089ee kernel: bcm2835-rng 3f104000.rng: hwrng registered
+Nov 04 04:16:42 hb-b827eb9089ee kernel: vc-mem: phys_addr:0x00000000 mem_base=0x3ec00000 mem_size:0x400
+Nov 04 04:16:42 hb-b827eb9089ee kernel: vc-sm: Videocore shared memory driver
+Nov 04 04:16:42 hb-b827eb9089ee kernel: gpiomem-bcm2835 3f200000.gpiomem: Initialised: Registers at 0x3
+Nov 04 04:16:42 hb-b827eb9089ee kernel: brd: module loaded
+Nov 04 04:16:42 hb-b827eb9089ee kernel: loop: module loaded
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Loading iSCSI transport class v2.0-870.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usbcore: registered new interface driver smsc95xx
+Nov 04 04:16:42 hb-b827eb9089ee kernel: dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Core Release: 2.80a
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Setting default values for core params
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Finished setting default values for core params
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Using Buffer DMA mode
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Periodic Transfer Interrupt Enhancement - disabled
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Multiprocessor Interrupt Enhancement - disabled
+Nov 04 04:16:42 hb-b827eb9089ee kernel: OTG VER PARAM: 0, OTG VER FLAG: 0
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Dedicated Tx FIFOs mode
+Nov 04 04:16:42 hb-b827eb9089ee kernel: WARN::dwc_otg_hcd_init:1032: FIQ DMA bounce buffers: virt = 0x9
+Nov 04 04:16:42 hb-b827eb9089ee kernel: FIQ FSM acceleration enabled for :
+                                        Non-periodic Split Transactions
+                                        Periodic Split Transactions
+                                        High-Speed Isochronous Endpoints
+                                        Interrupt/Control Split Transaction hack enabled
+Nov 04 04:16:42 hb-b827eb9089ee kernel: dwc_otg: Microframe scheduler enabled
+Nov 04 04:16:42 hb-b827eb9089ee kernel: WARN::hcd_init_fiq:459: FIQ on core 1 at 0x805c5d34
+Nov 04 04:16:42 hb-b827eb9089ee kernel: WARN::hcd_init_fiq:460: FIQ ASM at 0x805c609c length 36
+Nov 04 04:16:42 hb-b827eb9089ee kernel: WARN::hcd_init_fiq:486: MPHI regs_base at 0xb88a5000
+Nov 04 04:16:42 hb-b827eb9089ee kernel: dwc_otg 3f980000.usb: DWC OTG Controller
+Nov 04 04:16:42 hb-b827eb9089ee kernel: dwc_otg 3f980000.usb: new USB bus registered, assigned bus numb
+Nov 04 04:16:42 hb-b827eb9089ee kernel: dwc_otg 3f980000.usb: irq 62, io mem 0x00000000
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Init: Port Power? op_state=1
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Init: Power Port (0)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumbe
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb usb1: Product: DWC OTG Controller
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb usb1: Manufacturer: Linux 4.14.17-v7+ dwc_otg_hcd
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb usb1: SerialNumber: 3f980000.usb
+Nov 04 04:16:42 hb-b827eb9089ee kernel: hub 1-0:1.0: USB hub found
+Nov 04 04:16:42 hb-b827eb9089ee kernel: hub 1-0:1.0: 1 port detected
+Nov 04 04:16:42 hb-b827eb9089ee kernel: dwc_otg: FIQ enabled
+Nov 04 04:16:42 hb-b827eb9089ee kernel: dwc_otg: NAK holdoff enabled
+Nov 04 04:16:42 hb-b827eb9089ee kernel: dwc_otg: FIQ split-transaction FSM enabled
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Module dwc_common_port init
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usbcore: registered new interface driver usb-storage
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mousedev: PS/2 mouse device common for all mice
+Nov 04 04:16:42 hb-b827eb9089ee kernel: IR NEC protocol handler initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: IR RC5(x/sz) protocol handler initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: IR RC6 protocol handler initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: IR JVC protocol handler initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: IR Sony protocol handler initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: IR SANYO protocol handler initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: IR Sharp protocol handler initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: IR MCE Keyboard/mouse protocol handler initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: IR XMP protocol handler initialized
+Nov 04 04:16:42 hb-b827eb9089ee kernel: bcm2835-wdt 3f100000.watchdog: Broadcom BCM2835 watchdog timer
+Nov 04 04:16:42 hb-b827eb9089ee kernel: bcm2835-cpufreq: min=600000 max=1200000
+Nov 04 04:16:42 hb-b827eb9089ee kernel: sdhci: Secure Digital Host Controller Interface driver
+Nov 04 04:16:42 hb-b827eb9089ee kernel: sdhci: Copyright(c) Pierre Ossman
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc-bcm2835 3f300000.mmc: could not get clk, deferring probe
+Nov 04 04:16:42 hb-b827eb9089ee kernel: sdhost-bcm2835 3f202000.mmc: could not get clk, deferring probe
+Nov 04 04:16:42 hb-b827eb9089ee kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Nov 04 04:16:42 hb-b827eb9089ee kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Nov 04 04:16:42 hb-b827eb9089ee kernel: hidraw: raw HID events driver (C) Jiri Kosina
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usbcore: registered new interface driver usbhid
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usbhid: USB HID core driver
+Nov 04 04:16:42 hb-b827eb9089ee kernel: vchiq: vchiq_init_state: slot_zero = 9ed80000, is_master = 0
+Nov 04 04:16:42 hb-b827eb9089ee kernel: [vc_sm_connected_init]: start
+Nov 04 04:16:42 hb-b827eb9089ee kernel: [vc_sm_connected_init]: end - returning 0
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Initializing XFRM netlink socket
+Nov 04 04:16:42 hb-b827eb9089ee kernel: NET: Registered protocol family 17
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Key type dns_resolver registered
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Registering SWP/SWPB emulation handler
+Nov 04 04:16:42 hb-b827eb9089ee kernel: registered taskstats version 1
+Nov 04 04:16:42 hb-b827eb9089ee kernel: uart-pl011 3f201000.serial: cts_event_workaround enabled
+Nov 04 04:16:42 hb-b827eb9089ee kernel: 3f201000.serial: ttyAMA0 at MMIO 0x3f201000 (irq = 87, base_bau
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc-bcm2835 3f300000.mmc: mmc_debug:0 mmc_debug2:0
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc-bcm2835 3f300000.mmc: DMA channel allocated
+Nov 04 04:16:42 hb-b827eb9089ee kernel: sdhost: log_buf @ 9ed07000 (ded07000)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc0: sdhost-bcm2835 loaded - DMA enabled (>1)
+Nov 04 04:16:42 hb-b827eb9089ee kernel: of_cfs_init
+Nov 04 04:16:42 hb-b827eb9089ee kernel: of_cfs_init: OK
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Waiting for root device PARTUUID=31432eda-02...
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Indeed it is in host mode hprt0 = 00021501
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc1: new high speed SDIO card at address 0001
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc0: host does not support reading read-only switch, assuming 
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmc0: new high speed SDHC card at address aaaa
+Nov 04 04:16:42 hb-b827eb9089ee kernel: mmcblk0: mmc0:aaaa SU16G 14.8 GiB
+Nov 04 04:16:42 hb-b827eb9089ee kernel:  mmcblk0: p1 p2
+Nov 04 04:16:42 hb-b827eb9089ee kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: VFS: Mounted root (ext4 filesystem) readonly on device 179:2.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: devtmpfs: mounted
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Freeing unused kernel memory: 1024K
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1: new high-speed USB device number 2 using dwc_otg
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Indeed it is in host mode hprt0 = 00001101
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9514
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber
+Nov 04 04:16:42 hb-b827eb9089ee kernel: hub 1-1:1.0: USB hub found
+Nov 04 04:16:42 hb-b827eb9089ee kernel: hub 1-1:1.0: 5 ports detected
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: System time before build time, advancing clock.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: NET: Registered protocol family 10
+Nov 04 04:16:42 hb-b827eb9089ee kernel: Segment Routing with IPv6
+Nov 04 04:16:42 hb-b827eb9089ee kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.1: new high-speed USB device number 3 using dwc_otg
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: systemd 232 running in system mode. (+PAM +AUDIT +SELINUX +
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: Detected architecture arm.
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: Set hostname to <hb-b827eb9089ee>.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumb
+Nov 04 04:16:42 hb-b827eb9089ee kernel: smsc95xx v1.0.6
+Nov 04 04:16:42 hb-b827eb9089ee kernel: smsc95xx 1-1.1:1.0 eth0: register 'smsc95xx' at usb-3f980000.us
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.2: new full-speed USB device number 4 using dwc_otg
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.2: New USB device found, idVendor=046d, idProduct=c52b
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumb
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.2: Product: USB Receiver
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.2: Manufacturer: Logitech
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: Set up automount Arbitrary Executable File Formats File Sys
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: Created slice User and Session Slice.
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: Listening on udev Kernel Socket.
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: Listening on Journal Socket.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.4: new low-speed USB device number 5 using dwc_otg
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: Listening on Syslog Socket.
+Nov 04 04:16:42 hb-b827eb9089ee systemd[1]: Created slice System Slice.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: i2c /dev entries driver
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.4: New USB device found, idVendor=046d, idProduct=c31c
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumb
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.4: Product: USB Keyboard
+Nov 04 04:16:42 hb-b827eb9089ee kernel: usb 1-1.4: Manufacturer: Logitech
+Nov 04 04:16:42 hb-b827eb9089ee kernel: input: Logitech USB Keyboard as /devices/platform/soc/3f980000.
+Nov 04 04:16:42 hb-b827eb9089ee kernel: hid-generic 0003:046D:C31C.0004: input,hidraw0: USB HID v1.10 K
+Nov 04 04:16:43 hb-b827eb9089ee systemd-journald[90]: Journal started
+Nov 04 04:16:43 hb-b827eb9089ee systemd-journald[90]: Runtime journal (/run/log/journal/6826c18c2463432
+Nov 16 08:42:51 hb-b827eb9089ee kernel: input: Logitech USB Keyboard as /devices/platform/soc/3f980000.
+Nov 04 04:16:42 hb-b827eb9089ee systemd-modules-load[93]: Inserted module 'i2c_dev'
+Nov 16 08:42:51 hb-b827eb9089ee fake-hwclock[87]: Thu 15 Nov 21:42:51 UTC 2018
+Nov 16 08:42:51 hb-b827eb9089ee systemd-fsck[85]: e2fsck 1.43.4 (31-Jan-2017)
+Nov 16 08:42:51 hb-b827eb9089ee kernel: hid-generic 0003:046D:C31C.0005: input,hidraw1: USB HID v1.10 D
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started Create Static Device Nodes in /dev.
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Starting udev Kernel Device Manager...
+Nov 16 08:42:51 hb-b827eb9089ee systemd-fsck[85]: rootfs: clean, 181946/963424 files, 2091877/3877248 b
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started File System Check on Root Device.
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Starting Remount Root and Kernel File Systems...
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started Remount Root and Kernel File Systems.
+Nov 16 08:42:51 hb-b827eb9089ee kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Activating swap /swapfile1...
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Starting Load/Save Random Seed...
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Starting Flush Journal to Persistent Storage...
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Starting udev Coldplug all Devices...
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started Load/Save Random Seed.
+Nov 16 08:42:51 hb-b827eb9089ee systemd-journald[90]: Runtime journal (/run/log/journal/6826c18c2463432
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started Flush Journal to Persistent Storage.
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started Flush Journal to Persistent Storage.
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started udev Kernel Device Manager.
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started Set the console keyboard layout.
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Reached target Local File Systems (Pre).
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Activated swap /swapfile1.
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Reached target Swap.
+Nov 16 08:42:51 hb-b827eb9089ee kernel: Adding 524284k swap on /swapfile1.  Priority:-2 extents:3 acros
+Nov 16 08:42:51 hb-b827eb9089ee mtp-probe[154]: checking bus 1, device 5: "/sys/devices/platform/soc/3f
+Nov 16 08:42:51 hb-b827eb9089ee mtp-probe[154]: bus: 1, device: 5 was not an MTP device
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started udev Coldplug all Devices.
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Starting Show Plymouth Boot Screen...
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started Show Plymouth Boot Screen.
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Started Forward Password Requests to Plymouth Directory Wat
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Reached target Encrypted Volumes.
+Nov 16 08:42:51 hb-b827eb9089ee systemd[1]: Reached target Paths.
+Nov 16 08:42:52 hb-b827eb9089ee kernel: snd_bcm2835: module is from the staging directory, the quality 
+Nov 16 08:42:52 hb-b827eb9089ee kernel: bcm2835_alsa bcm2835_alsa: card created with 8 channels
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Found device /dev/serial1.
+Nov 16 08:42:52 hb-b827eb9089ee mtp-probe[210]: checking bus 1, device 5: "/sys/devices/platform/soc/3f
+Nov 16 08:42:52 hb-b827eb9089ee mtp-probe[210]: bus: 1, device: 5 was not an MTP device
+Nov 16 08:42:52 hb-b827eb9089ee mtp-probe[209]: checking bus 1, device 3: "/sys/devices/platform/soc/3f
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Found device /dev/disk/by-partuuid/31432eda-01.
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Starting File System Check on /dev/disk/by-partuuid/31432ed
+Nov 16 08:42:52 hb-b827eb9089ee mtp-probe[211]: checking bus 1, device 4: "/sys/devices/platform/soc/3f
+Nov 16 08:42:52 hb-b827eb9089ee mtp-probe[211]: bus: 1, device: 4 was not an MTP device
+Nov 16 08:42:52 hb-b827eb9089ee kernel: vc4_hdmi 3f902000.hdmi: vc4-hdmi-hifi <-> 3f902000.hdmi mapping
+Nov 16 08:42:52 hb-b827eb9089ee kernel: vc4-drm soc:gpu: bound 3f902000.hdmi (ops vc4_hdmi_ops [vc4])
+Nov 16 08:42:52 hb-b827eb9089ee kernel: vc4-drm soc:gpu: bound 3f806000.vec (ops vc4_vec_ops [vc4])
+Nov 16 08:42:52 hb-b827eb9089ee kernel: vc4-drm soc:gpu: bound 3f400000.hvs (ops vc4_hvs_ops [vc4])
+Nov 16 08:42:52 hb-b827eb9089ee kernel: vc4-drm soc:gpu: bound 3f206000.pixelvalve (ops vc4_crtc_ops [v
+Nov 16 08:42:52 hb-b827eb9089ee kernel: vc4-drm soc:gpu: bound 3f207000.pixelvalve (ops vc4_crtc_ops [v
+Nov 16 08:42:52 hb-b827eb9089ee kernel: vc4-drm soc:gpu: bound 3f807000.pixelvalve (ops vc4_crtc_ops [v
+Nov 16 08:42:52 hb-b827eb9089ee kernel: brcmfmac: F1 signature read @0x18000000=0x1541a9a6
+Nov 16 08:42:52 hb-b827eb9089ee kernel: brcmfmac: brcmf_fw_map_chip_to_name: using brcm/brcmfmac43430-s
+Nov 16 08:42:52 hb-b827eb9089ee kernel: usbcore: registered new interface driver brcmfmac
+Nov 16 08:42:52 hb-b827eb9089ee mtp-probe[209]: bus: 1, device: 3 was not an MTP device
+Nov 16 08:42:52 hb-b827eb9089ee kernel: vc4-drm soc:gpu: bound 3fc00000.v3d (ops vc4_v3d_ops [vc4])
+Nov 16 08:42:52 hb-b827eb9089ee kernel: [drm] Initialized vc4 0.0.0 20140616 for soc:gpu on minor 0
+Nov 16 08:42:52 hb-b827eb9089ee kernel: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+Nov 16 08:42:52 hb-b827eb9089ee kernel: [drm] Driver supports precise vblank timestamp query.
+Nov 16 08:42:52 hb-b827eb9089ee kernel: logitech-djreceiver 0003:046D:C52B.0003: hiddev96,hidraw2: USB 
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Reached target Sound Card.
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Wa
+Nov 16 08:42:52 hb-b827eb9089ee kernel: Console: switching to colour frame buffer device 240x67
+Nov 16 08:42:52 hb-b827eb9089ee kernel: input: Logitech M325 as /devices/platform/soc/3f980000.usb/usb1
+Nov 16 08:42:52 hb-b827eb9089ee kernel: logitech-hidpp-device 0003:046D:400A.0006: input,hidraw3: USB H
+Nov 16 08:42:52 hb-b827eb9089ee kernel: vc4-drm soc:gpu: fb0:  frame buffer device
+Nov 16 08:42:52 hb-b827eb9089ee kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmware version = wl0: Oct 23
+Nov 16 08:42:52 hb-b827eb9089ee kernel: brcmfmac: brcmf_c_preinit_dcmds: CLM version = API: 12.2 Data: 
+Nov 16 08:42:52 hb-b827eb9089ee systemd-udevd[160]: Process '/usr/sbin/alsactl -E HOME=/run/alsa restor
+Nov 16 08:42:52 hb-b827eb9089ee systemd-fsck[212]: fsck.fat 4.1 (2017-01-24)
+Nov 16 08:42:52 hb-b827eb9089ee systemd-fsck[212]: /dev/mmcblk0p1: 178 files, 43976/87078 clusters
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Started File System Check on /dev/disk/by-partuuid/31432eda
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Mounting /boot...
+Nov 16 08:42:52 hb-b827eb9089ee systemd-udevd[143]: Process '/usr/sbin/th-cmd --socket /var/run/thd.soc
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Mounted /boot.
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Reached target Local File Systems.
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Starting Preprocess NFS configuration...
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Starting Set console font and keymap...
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Starting Raise network interfaces...
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Starting Create Volatile Files and Directories...
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Started Preprocess NFS configuration.
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Reached target NFS client services.
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Reached target Remote File Systems (Pre).
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Reached target Remote File Systems.
+Nov 16 08:42:52 hb-b827eb9089ee systemd[1]: Started Set console font and keymap.
+Nov 16 08:42:53 hb-b827eb9089ee systemd[1]: Started Create Volatile Files and Directories.
+Nov 16 08:42:53 hb-b827eb9089ee systemd[1]: Starting Network Time Synchronization...
+Nov 16 08:42:53 hb-b827eb9089ee systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Nov 16 08:42:53 hb-b827eb9089ee systemd-udevd[148]: Process '/usr/sbin/th-cmd --socket /var/run/thd.soc
+Nov 16 08:42:53 hb-b827eb9089ee systemd-udevd[156]: Process '/usr/sbin/th-cmd --socket /var/run/thd.soc
+Nov 16 08:42:53 hb-b827eb9089ee systemd-udevd[147]: Process '/usr/sbin/th-cmd --socket /var/run/thd.soc
+Nov 16 08:42:53 hb-b827eb9089ee systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Nov 16 08:42:53 hb-b827eb9089ee systemd[1]: Started Network Time Synchronization.
+Nov 16 08:42:53 hb-b827eb9089ee systemd[1]: Reached target System Time Synchronized.
+Nov 16 08:42:53 hb-b827eb9089ee kernel: random: crng init done
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Received SIGRTMIN+20 from PID 164 (plymouthd).
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Reached target System Initialization.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Started Daily Cleanup of Temporary Directories.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Listening on D-Bus System Message Bus Socket.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Listening on triggerhappy.socket.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Reached target Sockets.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Reached target Basic System.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Starting LSB: Switch to ondemand cpu governor (unless shift
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Starting Login Service...
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Starting Modem Manager...
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Starting System Logging Service...
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Starting Save/Restore Sound Card State...
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Started Regular background program processing daemon.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Starting Configure Bluetooth Modems connected by UART...
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: apt-daily.timer: Adding 6min 46.070689s random time.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Started Daily apt download activities.
+Nov 16 08:42:54 hb-b827eb9089ee systemd[1]: Started D-Bus System Message Bus.
+Nov 16 08:42:54 hb-b827eb9089ee cron[309]: (CRON) INFO (pidfile fd = 3)
+Nov 16 08:42:54 hb-b827eb9089ee cron[309]: (CRON) INFO (Running @reboot jobs)
+Nov 16 08:42:54 hb-b827eb9089ee kernel: uart-pl011 3f201000.serial: no DMA platform data
+Nov 16 08:42:54 hb-b827eb9089ee liblogging-stdlog[306]:  [origin software="rsyslogd" swVersion="8.24.0"
+Nov 16 08:42:55 hb-b827eb9089ee ModemManager[304]: <info>  ModemManager (version 1.6.4) starting in sys
+Nov 16 08:42:55 hb-b827eb9089ee dbus[312]: [system] Successfully activated service 'org.freedesktop.sys
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: apt-daily-upgrade.timer: Adding 14min 56.052967s random tim
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Daily apt upgrade and clean activities.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Reached target Timers.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting dhcpcd on all interfaces...
+Nov 16 08:42:55 hb-b827eb9089ee dbus[312]: [system] Activating via systemd: service name='org.freedeskt
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting LSB: Autogenerate and use a swap file...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting Check for v3d driver...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting Disable WiFi if country not set...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting triggerhappy global hotkey daemon...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started System Logging Service.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Save/Restore Sound Card State.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Disable WiFi if country not set.
+Nov 16 08:42:55 hb-b827eb9089ee thd[357]: Found socket passed from systemd
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started triggerhappy global hotkey daemon.
+Nov 16 08:42:55 hb-b827eb9089ee dhcpcd[349]: dev: loaded udev
+Nov 16 08:42:55 hb-b827eb9089ee dhcpcd[349]: forked to background, child pid 361
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started dhcpcd on all interfaces.
+Nov 16 08:42:55 hb-b827eb9089ee avahi-daemon[356]: Found user 'avahi' (UID 108) and group 'avahi' (GID 
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Check for v3d driver.
+Nov 16 08:42:55 hb-b827eb9089ee avahi-daemon[356]: Successfully dropped root privileges.
+Nov 16 08:42:55 hb-b827eb9089ee avahi-daemon[356]: avahi-daemon 0.6.32 starting up.
+Nov 16 08:42:55 hb-b827eb9089ee avahi-daemon[356]: Successfully called chroot().
+Nov 16 08:42:55 hb-b827eb9089ee avahi-daemon[356]: Successfully dropped remaining capabilities.
+Nov 16 08:42:55 hb-b827eb9089ee avahi-daemon[356]: No service file found in /etc/avahi/services.
+Nov 16 08:42:55 hb-b827eb9089ee avahi-daemon[356]: Network interface enumeration completed.
+Nov 16 08:42:55 hb-b827eb9089ee avahi-daemon[356]: Server startup complete. Host name is hb-b827eb9089e
+Nov 16 08:42:55 hb-b827eb9089ee systemd-logind[303]: New seat seat0.
+Nov 16 08:42:55 hb-b827eb9089ee dphys-swapfile[350]: Starting dphys-swapfile swapfile setup ...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Login Service.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting netatalk.service...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting Authorization Manager...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting Load/Save RF Kill Switch Status...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Raise network interfaces.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Reached target Network.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting Permit User Sessions...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting /etc/rc.local Compatibility...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting OpenBSD Secure Shell server...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Load/Save RF Kill Switch Status.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Permit User Sessions.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started /etc/rc.local Compatibility.
+Nov 16 08:42:55 hb-b827eb9089ee dphys-swapfile[350]: want /var/swap=100MByte, checking existing: keepin
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting Light Display Manager...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting Hold until boot process finishes up...
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Starting Terminate Plymouth Boot Screen...
+Nov 16 08:42:55 hb-b827eb9089ee dhcpcd-run-hooks[425]: wlan0: starting wpa_supplicant
+Nov 16 08:42:55 hb-b827eb9089ee kernel: Adding 102396k swap on /var/swap.  Priority:-3 extents:1 across
+Nov 16 08:42:55 hb-b827eb9089ee dphys-swapfile[350]: done.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started LSB: Autogenerate and use a swap file.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Received SIGRTMIN+21 from PID 164 (plymouthd).
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Hold until boot process finishes up.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Terminate Plymouth Boot Screen.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Started Getty on tty1.
+Nov 16 08:42:55 hb-b827eb9089ee systemd[1]: Reached target Login Prompts.
+Nov 16 08:42:56 hb-b827eb9089ee kernel: IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+Nov 16 08:42:56 hb-b827eb9089ee kernel: brcmfmac: power management disabled
+Nov 16 08:42:56 hb-b827eb9089ee netatalk[379]: Starting Netatalk services (this will take a while):  cn
+Nov 16 08:42:56 hb-b827eb9089ee systemd[1]: Started netatalk.service.
+Nov 16 08:42:56 hb-b827eb9089ee afpd[446]: AFP/TCP started, advertising 0.0.0.0:548 (2.2.5)
+Nov 16 08:42:56 hb-b827eb9089ee sshd[449]: Server listening on 0.0.0.0 port 22.
+Nov 16 08:42:56 hb-b827eb9089ee sshd[449]: Server listening on :: port 22.
+Nov 16 08:42:56 hb-b827eb9089ee systemd[1]: Started OpenBSD Secure Shell server.
+Nov 16 08:42:56 hb-b827eb9089ee polkitd[381]: started daemon version 0.105 using authority implementati
+Nov 16 08:42:56 hb-b827eb9089ee dbus[312]: [system] Successfully activated service 'org.freedesktop.Pol
+Nov 16 08:42:56 hb-b827eb9089ee systemd[1]: Started Authorization Manager.
+Nov 16 08:42:56 hb-b827eb9089ee lightdm[424]: Error getting user list from org.freedesktop.Accounts: GD
+Nov 16 08:42:56 hb-b827eb9089ee systemd[1]: Started Light Display Manager.
+Nov 16 08:42:56 hb-b827eb9089ee raspi-config[302]: Checking if shift key is held down: No. Switching to
+Nov 16 08:42:56 hb-b827eb9089ee systemd[1]: Started LSB: Switch to ondemand cpu governor (unless shift 
+Nov 16 08:42:56 hb-b827eb9089ee dhcpcd[361]: eth0: waiting for carrier
+Nov 16 08:42:56 hb-b827eb9089ee dhcpcd[361]: wlan0: waiting for carrier
+Nov 16 08:42:56 hb-b827eb9089ee dhcpcd[361]: wlan0: carrier acquired
+Nov 16 08:42:56 hb-b827eb9089ee kernel: smsc95xx 1-1.1:1.0 eth0: hardware isn't capable of remote wakeu
+Nov 16 08:42:56 hb-b827eb9089ee kernel: IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Nov 16 08:42:56 hb-b827eb9089ee dhcpcd[361]: DUID 00:01:00:01:22:c5:a3:5a:b8:27:eb:90:89:ee
+Nov 16 08:42:56 hb-b827eb9089ee dhcpcd[361]: wlan0: IAID eb:90:89:ee
+Nov 16 08:42:56 hb-b827eb9089ee dhcpcd[361]: wlan0: adding address fe80::5e6:613f:dfaa:e58e
+Nov 16 08:42:56 hb-b827eb9089ee dhcpcd[361]: wlan0: carrier lost
+Nov 16 08:42:56 hb-b827eb9089ee dhcpcd[361]: wlan0: deleting address fe80::5e6:613f:dfaa:e58e
+Nov 16 08:42:56 hb-b827eb9089ee systemd[1]: Started Modem Manager.
+Nov 16 08:42:57 hb-b827eb9089ee dhcpcd[361]: wlan0: carrier acquired
+Nov 16 08:42:57 hb-b827eb9089ee kernel: IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+Nov 16 08:42:57 hb-b827eb9089ee dhcpcd[361]: wlan0: IAID eb:90:89:ee
+Nov 16 08:42:57 hb-b827eb9089ee dhcpcd[361]: wlan0: adding address fe80::5d42:470:a930:1034
+Nov 16 08:42:57 hb-b827eb9089ee dhcpcd[361]: wlan0: soliciting an IPv6 router
+Nov 16 08:42:58 hb-b827eb9089ee dhcpcd[361]: wlan0: rebinding lease of 192.168.2.1
+Nov 16 08:42:58 hb-b827eb9089ee dhcpcd[361]: wlan0: probing address 192.168.2.1/24
+Nov 16 08:42:58 hb-b827eb9089ee avahi-daemon[356]: Joining mDNS multicast group on interface wlan0.IPv6
+Nov 16 08:42:58 hb-b827eb9089ee avahi-daemon[356]: New relevant interface wlan0.IPv6 for mDNS.
+Nov 16 08:42:58 hb-b827eb9089ee avahi-daemon[356]: Registering new address record for fe80::5d42:470:a9
+Nov 16 08:42:58 hb-b827eb9089ee dhcpcd[361]: wlan0: Router Advertisement from fe80::204:edff:fedb:51b9
+Nov 16 08:42:58 hb-b827eb9089ee dhcpcd[361]: wlan0: adding default route via fe80::204:edff:fedb:51b9
+Nov 16 08:42:59 hb-b827eb9089ee ModemManager[304]: <info>  Couldn't check support for device at '/sys/d
+Nov 16 08:42:59 hb-b827eb9089ee lightdm[490]: Error getting user list from org.freedesktop.Accounts: GD
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: Core ver 2.22
+Nov 16 08:42:59 hb-b827eb9089ee kernel: NET: Registered protocol family 31
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: HCI device and connection manager initialized
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: HCI socket layer initialized
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: L2CAP socket layer initialized
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: SCO socket layer initialized
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: HCI UART driver ver 2.3
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: HCI UART protocol H4 registered
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: HCI UART protocol Three-wire (H5) registered
+Nov 16 08:42:59 hb-b827eb9089ee btuart[310]: bcm43xx_init
+Nov 16 08:42:59 hb-b827eb9089ee btuart[310]: Flash firmware /lib/firmware/brcm/BCM43430A1.hcd
+Nov 16 08:42:59 hb-b827eb9089ee btuart[310]: Set BDADDR UART: b8:27:eb:6f:76:11
+Nov 16 08:42:59 hb-b827eb9089ee btuart[310]: Set Controller UART speed to 921600 bit/s
+Nov 16 08:42:59 hb-b827eb9089ee btuart[310]: Device setup complete
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Started Configure Bluetooth Modems connected by UART.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Starting Bluetooth service...
+Nov 16 08:42:59 hb-b827eb9089ee lightdm[490]: pam_unix(lightdm-autologin:session): session opened for u
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Created slice User Slice of pi.
+Nov 16 08:42:59 hb-b827eb9089ee bluetoothd[507]: Bluetooth daemon 5.43
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Starting User Manager for UID 1000...
+Nov 16 08:42:59 hb-b827eb9089ee systemd-logind[303]: New session c1 of user pi.
+Nov 16 08:42:59 hb-b827eb9089ee bluetoothd[507]: Starting SDP server
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Started Bluetooth service.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Started Session c1 of user pi.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: pam_unix(systemd-user:session): session opened for user p
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Started BluezALSA proxy.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Reached target Multi-User System.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Reached target Graphical Interface.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Starting Update UTMP about System Runlevel Changes...
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: BNEP filters: protocol multicast
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: BNEP socket layer initialized
+Nov 16 08:42:59 hb-b827eb9089ee dbus[312]: [system] Activating via systemd: service name='org.freedeskt
+Nov 16 08:42:59 hb-b827eb9089ee bluetoothd[507]: Bluetooth management interface 1.14 initialized
+Nov 16 08:42:59 hb-b827eb9089ee bluetoothd[507]: Failed to obtain handles for "Service Changed" charact
+Nov 16 08:42:59 hb-b827eb9089ee bluetoothd[507]: Sap driver initialization failed.
+Nov 16 08:42:59 hb-b827eb9089ee bluetoothd[507]: sap-server: Operation not permitted (1)
+Nov 16 08:42:59 hb-b827eb9089ee bluetoothd[507]: Failed to set mode: Blocked through rfkill (0x12)
+Nov 16 08:42:59 hb-b827eb9089ee bluetoothd[507]: Endpoint registered: sender=:1.10 path=/A2DP/SBC/Sourc
+Nov 16 08:42:59 hb-b827eb9089ee bluetoothd[507]: Endpoint registered: sender=:1.10 path=/A2DP/SBC/Sink/
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Starting Hostname Service...
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Started Raspberry Pi bluetooth helper.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Reached target Bluetooth.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Started Update UTMP about System Runlevel Changes.
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: RFCOMM TTY layer initialized
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: RFCOMM socket layer initialized
+Nov 16 08:42:59 hb-b827eb9089ee kernel: Bluetooth: RFCOMM ver 1.11
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Reached target Timers.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Reached target Paths.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Listening on GnuPG cryptographic agent and passphrase cac
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Starting D-Bus User Message Bus Socket.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Listening on GnuPG cryptographic agent (ssh-agent emulati
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Listening on GnuPG cryptographic agent and passphrase cac
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Listening on GnuPG network certificate management daemon.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Listening on GnuPG cryptographic agent (access for web br
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Listening on D-Bus User Message Bus Socket.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Reached target Sockets.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Reached target Basic System.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Reached target Default.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Startup finished in 148ms.
+Nov 16 08:42:59 hb-b827eb9089ee systemd[1]: Started User Manager for UID 1000.
+Nov 16 08:42:59 hb-b827eb9089ee lightdm[424]: Error opening audit socket: Protocol not supported
+Nov 16 08:42:59 hb-b827eb9089ee systemd[511]: Started D-Bus User Message Bus.
+Nov 16 08:43:00 hb-b827eb9089ee dbus[312]: [system] Successfully activated service 'org.freedesktop.hos
+Nov 16 08:43:00 hb-b827eb9089ee systemd[1]: Started Hostname Service.
+Nov 16 08:43:00 hb-b827eb9089ee systemd[1]: Startup finished in 1.408s (kernel) + 10.076s (userspace) =
+Nov 16 08:43:01 hb-b827eb9089ee dbus-daemon[633]: Activating via systemd: service name='org.gtk.vfs.Dae
+Nov 16 08:43:01 hb-b827eb9089ee systemd[511]: Starting Virtual filesystem service...
+Nov 16 08:43:01 hb-b827eb9089ee dbus-daemon[633]: Successfully activated service 'org.gtk.vfs.Daemon'
+Nov 16 08:43:01 hb-b827eb9089ee systemd[511]: Started Virtual filesystem service.
+Nov 16 08:43:01 hb-b827eb9089ee kernel: fuse init (API version 7.26)
+Nov 16 08:43:01 hb-b827eb9089ee systemd[1]: Mounting FUSE Control File System...
+Nov 16 08:43:01 hb-b827eb9089ee systemd[1]: Mounted FUSE Control File System.
+Nov 16 08:43:01 hb-b827eb9089ee polkitd(authority=local)[381]: Registered Authentication Agent for unix
+Nov 16 08:43:02 hb-b827eb9089ee sudo[709]:       pi : TTY=unknown ; PWD=/home/pi ; USER=root ; COMMAND=
+Nov 16 08:43:02 hb-b827eb9089ee sudo[709]: pam_unix(sudo:session): session opened for user root by (uid
+Nov 16 08:43:02 hb-b827eb9089ee sudo[728]:     root : TTY=unknown ; PWD=/home/pi ; USER=root ; COMMAND=
+Nov 16 08:43:02 hb-b827eb9089ee sudo[728]: pam_unix(sudo:session): session opened for user root by (uid
+Nov 16 08:43:02 hb-b827eb9089ee sudo[728]: pam_unix(sudo:session): session closed for user root
+Nov 16 08:43:02 hb-b827eb9089ee sudo[709]: pam_unix(sudo:session): session closed for user root
+Nov 16 08:43:02 hb-b827eb9089ee sudo[743]:     root : TTY=unknown ; PWD=/home/pi/HappyBrackets ; USER=r
+Nov 16 08:43:02 hb-b827eb9089ee sudo[743]: pam_unix(sudo:session): session opened for user root by (uid
+Nov 16 08:43:03 hb-b827eb9089ee dbus-daemon[633]: Activating via systemd: service name='org.gtk.vfs.UDi
+Nov 16 08:43:03 hb-b827eb9089ee systemd[511]: Starting Virtual filesystem service - disk device monitor
+Nov 16 08:43:03 hb-b827eb9089ee dhcpcd[361]: wlan0: leased 192.168.2.1 for 43200 seconds
+Nov 16 08:43:03 hb-b827eb9089ee avahi-daemon[356]: Joining mDNS multicast group on interface wlan0.IPv4
+Nov 16 08:43:03 hb-b827eb9089ee dhcpcd[361]: wlan0: adding route to 192.168.2.0/24
+Nov 16 08:43:03 hb-b827eb9089ee dhcpcd[361]: wlan0: adding default route via 192.168.2.254
+Nov 16 08:43:03 hb-b827eb9089ee avahi-daemon[356]: New relevant interface wlan0.IPv4 for mDNS.
+Nov 16 08:43:03 hb-b827eb9089ee avahi-daemon[356]: Registering new address record for 192.168.2.1 on wl
+Nov 16 08:43:03 hb-b827eb9089ee dbus[312]: [system] Activating via systemd: service name='org.freedeskt
+Nov 16 08:43:04 hb-b827eb9089ee systemd[1]: Starting Disk Manager...
+Nov 16 08:43:04 hb-b827eb9089ee udisksd[799]: udisks daemon version 2.1.8 starting
+Nov 16 08:43:04 hb-b827eb9089ee dbus[312]: [system] Successfully activated service 'org.freedesktop.UDi
+Nov 16 08:43:04 hb-b827eb9089ee systemd[1]: Started Disk Manager.
+Nov 16 08:43:04 hb-b827eb9089ee udisksd[799]: Acquired the name org.freedesktop.UDisks2 on the system m
+Nov 16 08:43:04 hb-b827eb9089ee dbus-daemon[633]: Successfully activated service 'org.gtk.vfs.UDisks2Vo
+Nov 16 08:43:04 hb-b827eb9089ee systemd[511]: Started Virtual filesystem service - disk device monitor.
+Nov 16 08:43:04 hb-b827eb9089ee dbus-daemon[633]: Activating via systemd: service name='org.gtk.vfs.Afc
+Nov 16 08:43:04 hb-b827eb9089ee systemd[511]: Starting Virtual filesystem service - Apple File Conduit 
+Nov 16 08:43:04 hb-b827eb9089ee gvfs-afc-volume-monitor[834]: Volume monitor alive
+Nov 16 08:43:04 hb-b827eb9089ee dbus-daemon[633]: Successfully activated service 'org.gtk.vfs.AfcVolume
+Nov 16 08:43:04 hb-b827eb9089ee systemd[511]: Started Virtual filesystem service - Apple File Conduit m
+Nov 16 08:43:04 hb-b827eb9089ee dbus-daemon[633]: Activating via systemd: service name='org.gtk.vfs.GPh
+Nov 16 08:43:04 hb-b827eb9089ee systemd[511]: Starting Virtual filesystem service - digital camera moni
+Nov 16 08:43:05 hb-b827eb9089ee dbus-daemon[633]: Successfully activated service 'org.gtk.vfs.GPhoto2Vo
+Nov 16 08:43:05 hb-b827eb9089ee systemd[511]: Started Virtual filesystem service - digital camera monit
+Nov 16 08:43:05 hb-b827eb9089ee dbus-daemon[633]: Activating via systemd: service name='org.gtk.vfs.Goa
+Nov 16 08:43:05 hb-b827eb9089ee systemd[511]: Starting Virtual filesystem service - GNOME Online Accoun
+Nov 16 08:43:05 hb-b827eb9089ee dbus-daemon[633]: Successfully activated service 'org.gtk.vfs.GoaVolume
+Nov 16 08:43:05 hb-b827eb9089ee systemd[511]: Started Virtual filesystem service - GNOME Online Account
+Nov 16 08:43:05 hb-b827eb9089ee dbus-daemon[633]: Activating via systemd: service name='org.gtk.vfs.MTP
+Nov 16 08:43:05 hb-b827eb9089ee systemd[511]: Starting Virtual filesystem service - Media Transfer Prot
+Nov 16 08:43:05 hb-b827eb9089ee dbus-daemon[633]: Successfully activated service 'org.gtk.vfs.MTPVolume
+Nov 16 08:43:05 hb-b827eb9089ee systemd[511]: Started Virtual filesystem service - Media Transfer Proto
+Nov 16 08:43:10 hb-b827eb9089ee sshd[875]: Accepted password for pi from 192.168.2.2 port 64635 ssh2
+Nov 16 08:43:10 hb-b827eb9089ee sshd[875]: pam_unix(sshd:session): session opened for user pi by (uid=0
+Nov 16 08:43:10 hb-b827eb9089ee systemd-logind[303]: New session c2 of user pi.
+Nov 16 08:43:10 hb-b827eb9089ee systemd[1]: Started Session c2 of user pi.
+Nov 16 08:43:18 hb-b827eb9089ee sudo[970]:       pi : TTY=pts/0 ; PWD=/home/pi ; USER=root ; COMMAND=/b
+Nov 16 08:43:18 hb-b827eb9089ee sudo[970]: pam_unix(sudo:session): session opened for user root by pi(u
+Nov 16 08:43:32 hb-b827eb9089ee systemd[511]: Time has been changed
+Nov 16 08:43:32 hb-b827eb9089ee systemd-timesyncd[279]: Synchronized to time server 139.99.172.118:123 
+Nov 16 08:43:32 hb-b827eb9089ee systemd[1]: Time has been changed
+Nov 16 08:43:32 hb-b827eb9089ee systemd[1]: apt-daily-upgrade.timer: Adding 34min 46.355909s random tim
+Nov 16 08:43:32 hb-b827eb9089ee systemd[1]: apt-daily.timer: Adding 6h 57min 25.349656s random time.
+Nov 16 08:45:58 hb-b827eb9089ee sudo[970]: pam_unix(sudo:session): session closed for user root
+Nov 16 08:46:00 hb-b827eb9089ee sudo[988]:       pi : TTY=pts/0 ; PWD=/home/pi ; USER=root ; COMMAND=/b
+Nov 16 08:46:00 hb-b827eb9089ee sudo[988]: pam_unix(sudo:session): session opened for user root by pi(u
+Nov 16 08:46:17 hb-b827eb9089ee sudo[988]: pam_unix(sudo:session): session closed for user root
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 16777216
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 16777216
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 16777216
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 215228kb BOs (238)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4_v3d 3fc00000.v3d: Failed to allocate memory for tile binnin
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 222060kb BOs (240)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212216kb BOs (227)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212216kb BOs (227)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 5595136
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm:vc4_bo_create [vc4]] *ERROR* Failed to allocate from CMA:
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                         kernel:   8100kb BOs (1)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                            V3D: 212212kb BOs (226)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                     V3D shader:    384kb BOs (94)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: [drm]                           dumb:     48kb BOs (3)
+Nov 16 08:46:37 hb-b827eb9089ee kernel: vc4-drm soc:gpu: failed to allocate buffer with size 8110080
+Nov 16 08:47:03 hb-b827eb9089ee sudo[1003]:       pi : TTY=pts/0 ; PWD=/home/pi ; USER=root ; COMMAND=/
+Nov 16 08:47:03 hb-b827eb9089ee sudo[1003]: pam_unix(sudo:session): session opened for user root by pi(
+lines 771-793/793 (END)
